@@ -14,3 +14,15 @@ echo 'export PATH="/usr/local/opt/scala@2.11/bin:$PATH"' >> ~/.zshrc
 
 	If you need to have scala@2.11 first in your PATH run:
  	echo 'export PATH="/usr/local/opt/scala@2.11/bin:$PATH"' >> ~/.zshrc
+
+### windows安装
+
+下载链接：https://www.scala-lang.org/download/2.11.12.html
+
+下载该包：
+scala-2.11.12.msi	Windows (msi installer)	109.82M
+
+配置环境变量：
+SCALA_HOME
+PATH
+CLASSPATH
