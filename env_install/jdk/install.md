@@ -2,9 +2,10 @@
 
 ### mac安装
 
-命令：brew install openjdk@8
+1. brew install openjdk@8
+2. sudo ln -sfn /usr/local/opt/openjdk@8/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-8.jdk
 
-
+        提示信息：
         For the system Java wrappers to find this JDK, symlink it with
         sudo ln -sfn /usr/local/opt/openjdk@8/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-8.jdk
 
