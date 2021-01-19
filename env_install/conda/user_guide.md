@@ -9,7 +9,7 @@ https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
     Anaconda 镜像使用帮助
     Anaconda 是一个用于科学计算的 Python 发行版，支持 Linux, Mac, Windows, 包含了众多流行的科学计算、数据分析的 Python 包。
 
-    Anaconda 安装包可以到 [https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/) 下载。
+    Anaconda 安装包可以到 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/ 下载。
 
     TUNA 还提供了 Anaconda 仓库与第三方源（conda-forge、msys2、pytorch等，查看完整列表）的镜像，各系统都可以通过修改用户目录下的 .condarc 文件。Windows 用户无法直接创建名为 .condarc 的文件，可先执行 conda config --set show_channel_urls yes 生成该文件之后再修改。
 
@@ -40,12 +40,14 @@ https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
     Miniconda 镜像使用帮助
     Miniconda 是一个 Anaconda 的轻量级替代，默认只包含了 python 和 conda，但是可以通过 pip 和 conda 来安装所需要的包。
 
-    Miniconda 安装包可以到 [https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/) 下载。
+    Miniconda 安装包可以到 https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/ 下载。
 
 
     其他配置方式：
     conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
     conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2
     conda config --set show_channel_urls yes
     
     pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
@@ -54,4 +56,11 @@ https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
 
 ### docs
 https://docs.conda.io/projects/conda/en/latest/
+
+
+### macos install
+brew install miniconda
+
+    Please run the following to setup your shell:
+    conda init "$(basename "${SHELL}")"
 
