@@ -18,3 +18,14 @@
         For compilers to find openjdk@8 you may need to set:
         export CPPFLAGS="-I/usr/local/opt/openjdk@8/include"
 
+### linux安装
+1. 下载安装包：jdk-8u181-linux-x64.tar.gz
+2. tar -zxvf jdk-8u181-linux-x64.tar.gz -C /opt/module/
+3. 配置环境变量
+		1. vim /etc/profile # 在末尾添加：
+		#JAVA_HOME
+		export JAVA_HOME=/opt/module/jdk1.8.0_144
+		export PATH=$PATH:$JAVA_HOME/bin
+		
+		2. source /etc/profile
+		3. java -version
