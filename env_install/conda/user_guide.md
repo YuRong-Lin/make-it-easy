@@ -43,6 +43,15 @@ https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
     Miniconda 安装包可以到 [https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/](https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/) 下载。
 
 
+    其他配置方式：
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+    conda config --set show_channel_urls yes
+    
+    pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install xx -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
 ### docs
 https://docs.conda.io/projects/conda/en/latest/
 
