@@ -59,8 +59,4 @@ https://docs.conda.io/projects/conda/en/latest/
 
 
 ### macos install
-brew install miniconda
-
-    Please run the following to setup your shell:
-    conda init "$(basename "${SHELL}")"
-
+1. brew install miniconda(更新brew国内源，但始终用的官方源下载，导致特别慢最后失败)
