@@ -1,4 +1,4 @@
-# centos dfn install
+# centos dnf install
 
 	yum install epel-release -y
 	yum install dnf -y
