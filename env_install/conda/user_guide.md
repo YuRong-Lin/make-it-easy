@@ -61,3 +61,11 @@ https://docs.conda.io/projects/conda/en/latest/
 ### macos install
 1. brew install miniconda(更新brew国内源，但始终用的官方源下载，导致特别慢最后失败)
 2. 到清华镜像站下载pkg包直接安装
+
+### linux
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
+
+    下载安装文件：Miniconda3-py37_4.9.2-Linux-x86_64.sh
+    
+    执行：
+    bash Miniconda3-py37_4.9.2-Linux-x86_64.sh
