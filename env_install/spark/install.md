@@ -1,6 +1,6 @@
 # Spark 安装
 
-windows安装
+## windows安装
 
 1、Maven方式
 
@@ -33,3 +33,6 @@ windows安装
 		2）https://github.com/cdarlint/winutils
 		
 	在Path下配置好对应的bin路径即可。（重启了电脑才生效）
+	
+## yarn完全分布式模式
+见[SparrowRecSysZero2One项目环境搭建](https://github.com/YuRong-Lin/SparrowRecSysZero2One)
