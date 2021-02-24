@@ -11,3 +11,6 @@
 
 ## 顶会论文：
 * [arxiv.org](arxiv.org)
+
+## 深度学习平台
+* [https://www.paddlepaddle.org.cn/](https://www.paddlepaddle.org.cn/)
