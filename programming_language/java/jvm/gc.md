@@ -47,10 +47,11 @@
 * 弱引用（WeakReference）：只有弱引用的对象在下一轮垃圾收集时被回收。
 * 虚引用（PhanthonReference）：也被称为“幽灵引用”或“幻象引用”，不影响对象的生存时间，也不能通过它获得对象实例。设置虚引用的唯一目的是在对象被回收时收到一个通知。
 
-      软引用
+      // 软引用
       Object object = new Object();
       SoftReference<Object> softRef = new SoftReference(object);
       
+      // 弱引用
       WeakReference<Object> softRef = new WeakReference(object);
       
       ReferenceQueue queue = new ReferenceQueue();
@@ -105,8 +106,8 @@ Java虚拟机被允许对满足以上三个条件的类型进行回收，但只�
     3）大对象直接在老年代分配
        超过某个大小的对象直接在老年代分配，通过参数 -XX:PretenureSizeThreshold设置。默认为0，即全部对象优先在Eden中分配。
     4）动态对象年龄判定
-       有的垃圾回收算法，并不要求 age 必须达到 15 才能晋升到老年代，它会使用一些动态的计算方法。比如，如果幸存区中相同年龄对象大小的和，大于幸存区的一半，大于或等于 age 的对象将会直接
-       进入老年代。
+       有的垃圾回收算法，并不要求 age 必须达到 15 才能晋升到老年代，它会使用一些动态的计算方法。比如，如果幸存区中相同年龄对象大小的和，大于幸存区的一半，
+       大于或等于 age 的对象将会直接进入老年代。
 
     对象分配逻辑：https://s0.lgstatic.com/i/image3/M01/62/73/Cgq2xl4lQuiAM7ZPAABnAlb8gZ8269.jpg
 
@@ -133,7 +134,14 @@ Java虚拟机被允许对满足以上三个条件的类型进行回收，但只�
 ## Hotspot算法细节
 
 ### 根结点枚举
+固定可作为GC Roots的节点主要在**全局性的引用**（如常量或类静态属性）与**执行上下文**（如栈帧中的本地变量表）中，尽管目标明确，但要做到高效查找并非易事。
 
+迄今为止，所有收集器在根节点枚举过程都需要“Stop The World”，保证该过程始终一个**一致性的快照**中进行，这样才能保证分析结果的准确。
+
+目前主流Java虚拟机采用的是**准确式垃圾收集**（即虚拟机可以知道所有的内存位置存放的是数值还是引用），因此，虚拟机有办法直接得到哪些地方存放着对象引用。
+
+#### OopMap
+在HotSpot解决方案中，使用一组OopMap（OOP：Ordinary Object Pointer）的数据结构来达到目的。
 
 
 
