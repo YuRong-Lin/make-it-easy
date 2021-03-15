@@ -3,6 +3,8 @@
 ## 豆瓣加速
 pip install 库名称 -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com  
 
+pip install --index-url https://pypi.douban.com/simple tensorflow
+
 ## 其他加速
 清华：https://pypi.tuna.tsinghua.edu.cn/simple  
 阿里云：http://mirrors.aliyun.com/pypi/simple/  
