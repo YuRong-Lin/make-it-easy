@@ -29,3 +29,6 @@
 
 ## 专栏
 * [程序员练级攻略：机器学习和人工智能](https://time.geekbang.org/column/article/11669)
+
+## 课程
+* [吴恩达教授（Andrew Ng）在 Coursera 上的免费机器学习课程](https://www.coursera.org/learn/machine-learning)
