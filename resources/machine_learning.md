@@ -19,3 +19,13 @@
 
 ## 书籍
 * [Neural Networks and Deep Learning](https://tigerneil.gitbooks.io/neural-networks-and-deep-learning-zh/content/index.html)
+
+## 博客
+* [Dr. Jason Brownlee 的博客](https://machinelearningmastery.com/blog/)
+* [i am trask](http://iamtrask.github.io/)
+
+## 数据集
+* [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
+
+## 专栏
+* [程序员练级攻略：机器学习和人工智能](https://time.geekbang.org/column/article/11669)
