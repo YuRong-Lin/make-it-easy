@@ -16,3 +16,6 @@
 ## 深度学习平台
 * [https://www.paddlepaddle.org.cn/](https://www.paddlepaddle.org.cn/)
 * [https://tensorflow.google.cn/tutorials?hl=zh_cn](https://tensorflow.google.cn/tutorials?hl=zh_cn)
+
+## 书籍
+* [Neural Networks and Deep Learning](https://tigerneil.gitbooks.io/neural-networks-and-deep-learning-zh/content/index.html)
