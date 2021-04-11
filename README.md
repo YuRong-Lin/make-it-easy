@@ -14,9 +14,9 @@
 ## 感想/思维
 
 ## 实践项目
-1. (编译原理)[https://github.com/YuRong-Lin/funny-compiler]
-2. (深度学习推荐系统)[https://github.com/YuRong-Lin/SparrowRecSysZero2One]
-3. (leetcode)[https://github.com/YuRong-Lin/leetcode]
+1. [编译原理](https://github.com/YuRong-Lin/funny-compiler)
+2. [深度学习推荐系统](https://github.com/YuRong-Lin/SparrowRecSysZero2One)
+3. [leetcode](https://github.com/YuRong-Lin/leetcode)
 
 ## 知识体系构建
 * 编程语言/工具
@@ -28,4 +28,4 @@
 
 ## 个人主页
 
-1. (infoQ写作平台)[https://www.infoq.cn/u/linyurong]
+1. [infoQ写作平台](https://www.infoq.cn/u/linyurong)
