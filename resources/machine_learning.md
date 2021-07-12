@@ -36,3 +36,6 @@
 
 ## github
 * [动手学深度学习](https://github.com/d2l-ai/d2l-zh)
+
+## 视频
+* [动手学深度学习在线课程](https://courses.d2l.ai/zh-v2/)
